@@ -21,6 +21,12 @@ Command: curl http://127.0.0.1:8000/delete/33613 Function: 'Deletes the zip code
 Command: curl http://127.0.0.1:8000/display Function: 'Displays all the zip codes inserted till now' <br/>
 Command: curl http://127.0.0.1:8000/has/33613 Function: 'Checks if 33613 exists in the zip code'<br/>
 
-Interaction
+Tests
 -----
 
+I included the tests screenshots under TestScreenshots folder. Check those to see wheather everything is running as it should. If any kind of error occurs please reach out to pantamrohit@gmail.com. I will help you out to fix the error. 
+
+Note
+-----
+
+**I did my best to take care of the edge cases**
