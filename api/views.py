@@ -59,9 +59,10 @@ def insert(request,zipcode):
     zipcodeObject= {
         'zipcode': int(zipcode),
     }
-
-    zipcodeEntry = Zipcode.objects.create(**zipcodeObject)
-
+    try:
+        zipcodeEntry = Zipcode.objects.create(**zipcodeObject)
+    except:
+        return HttpResponse("Zipcode " + str(zipcode) + " already inserted.")
 
     return HttpResponse("Zipcode "+str(zipcodeEntry.zipcode)+" inserted.")
 
