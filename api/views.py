@@ -20,6 +20,8 @@ def zipRangeFinder(zips):
 
 @method_decorator(csrf_exempt, name='dispatch')
 def display(request):
+    if not Zipcode.objects.all():
+        return HttpResponse("No Zip Codes inserted!")
     zipcodes = Zipcode.objects.all()
 
     zipcodesValues = set()
