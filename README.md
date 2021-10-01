@@ -1,7 +1,7 @@
 ZipAPI
 ======
 
-The API is written using Python3 (Django Framework). You need to install Python 3.x and Django Framework.
+The API is written using Python3 (Django Framework), uses simple HTTP GET requests and curl to interact with it. You need to install Python 3.x and Django Framework.
 
 You can install Django by using the command,
 
