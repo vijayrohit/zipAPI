@@ -46,7 +46,7 @@ def display(request):
 
 @method_decorator(csrf_exempt, name='dispatch')
 def delete(request, zipcode):
-    if not (Zipcode.objects.filter(zipcode=zipcode)):
+    if not (Zipcode.objects.get(zipcode=zipcode)):
         return HttpResponse(str(zipcode)+" Not Found!")
     zipcodeObject = Zipcode.objects.filter(zipcode=zipcode)[0]
     zipcodeObject.delete()
@@ -67,7 +67,8 @@ def insert(request,zipcode):
 
 @method_decorator(csrf_exempt, name='dispatch')
 def has(request,zipcode):
-    if not (Zipcode.objects.filter(zipcode=zipcode)):
+    try:
+        if (Zipcode.objects.get(zipcode=zipcode)):
+            return HttpResponse("true")
+    except:
         return HttpResponse("false")
-    else:
-        return HttpResponse("true")
