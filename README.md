@@ -10,11 +10,11 @@ Python3 -m pip install -r requirement.txt
 Interaction
 -----
 
-I have included everything in this repo. Clone it and follow the steps below,
+I have included everything in this repo. Clone it and follow the steps below (You can use local CLI (Windows powershell on windows or Terminal on macOS)),
 
 1. In root folder of zipAPI (where you can see manage.py). Enter the command **python3 manage.py runserver**
 2. Once the server starts running without any issue at http://127.0.0.1:8000
-3. (Interaction) In you use local CLI (Windows powershell on windows or Terminal on macOS) enter the following commands as you wish,
+3. (Interaction) You can use local CLI (Windows powershell on windows or Terminal on macOS) enter the following commands as you wish,
 
 Command: **curl http://127.0.0.1:8000/insert/33613** Function: 'Inserts the zip code 33613' <br/>
 Command: **curl http://127.0.0.1:8000/delete/33613** Function: 'Deletes the zip code 33613' <br/>
