@@ -24,7 +24,7 @@ Command: **curl http://127.0.0.1:8000/has/33613** Function: 'Checks if 33613 exi
 Tests
 -----
 
-I included the tests screenshots under TestScreenshots folder. Check those to see wheather everything is running as it should. If any kind of error occurs please reach out to pantamrohit@gmail.com. I will help you out to fix the error. 
+I included the tests screenshots under TestScreenshots folder. Check those to see whether everything is running as it should. If you end up with any kind of setup issue, please reach out to pantamrohit@gmail.com. I will help you out to fix the issue. 
 
 Note
 -----
